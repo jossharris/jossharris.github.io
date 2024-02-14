@@ -3,41 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Joss Harris</title>
 </head>
 <body>
-
     <header>
         <h1>Joss Harris</h1>
     </header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>Write a brief introduction about yourself, your skills, and your passion for programming.</p>
-    </section>
+    <div id="blurContainer">
 
-    <section>
-        <h2>Projects</h2>
-
-        <div class="project">
-            <h3>Project 1: Project Name</h3>
-            <p>Description of the project. What technologies did you use? What problems did you solve?</p>
-            <!-- Add more details about Project 1 -->
+        <div class="button">
+            <div class="button-base"></div>
+            <button class="button-top" onclick="buttonClick()">Click me</button>
         </div>
-
-        <div class="project">
-            <h3>Project 2: Project Name</h3>
-            <p>Description of the project. What technologies did you use? What problems did you solve?</p>
-            <!-- Add more details about Project 2 -->
+        
+        <div class="grid-container" id="gridContainer">
+            <!-- Add your grid of images here -->
+            <div class="grid-item" onclick="showDetails(1)"><img src="image1.jpg" alt="Image 1"></div>
+            <div class="grid-item" onclick="showDetails(2)"><img src="image2.jpg" alt="Image 2"></div>
+            <!-- Add more grid items as needed -->
         </div>
+    </div>
 
-        <!-- Add more projects as needed -->
-
-    </section>
+    <div class="overlay" id="overlay" onclick="hideDetails()">
+        <div class="details" id="details">
+            <!-- Text details about the clicked image will appear here -->
+        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2024 Your Name - Programming Portfolio</p>
+        <p>&copy; 2024 Joss Harris</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
